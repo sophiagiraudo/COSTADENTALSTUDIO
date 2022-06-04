@@ -1,0 +1,826 @@
+@font-face {
+    font-family: amalia;
+    src: url(./fonts/Amalina.ttf);
+}
+@font-face {
+    font-family: kiona;
+    src: url(./fonts/KionaR.ttf);
+}
+@font-face {
+    font-family: made;
+    src: url(./fonts/MadeS.otf);
+}
+
+// variables fuentes
+$font1:'Khula', sans-serif;
+$font2: amalia;
+$font3: kiona;
+$font4: made;
+$font5: 'Roboto Flex', sans-serif; 
+
+// variables paleta-colores
+$color1:#070707;
+$color2:#0b0b0bd9;
+$color3:#4d4d4d;
+$color4:#fffdf76f;
+$color5:#b6b6b6;
+$color6:#ffffffcf;
+$color7:#e6e6e6;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Khula', sans-serif;
+}
+
+/* ------------------------------GENERAL-------------------------- */
+body{
+    background-color: $color1;
+}
+a{
+    text-decoration: none;
+}
+/*header*/
+.imgLogoMenu{
+    width: auto;
+    height: 70px;
+    object-fit: contain;
+    animation: fadeIn;
+    animation-duration: 2s; 
+}
+.bg-dark{
+    background-color: transparent!important;
+}
+.div-navnbar {
+    background-color: rgba(11, 11, 11, 0.851); 
+}
+.divNavnbarIndex{
+    border-bottom: 1px solid $color4;
+}
+ul.navbar-nav li a.nav-link{
+    color: rgb(230, 230, 230) !important;
+    font-size: 25px;
+    line-height: 2;
+    margin: 0 20px;
+    animation: fadeIn;
+    animation-duration: 2s; 
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+ul.navbar-nav li a.nav-link:hover{
+    color: $color1 !important;
+    font-weight: bold;
+}
+.navbar-toggler{
+    position: relative;
+    right: 15px;
+}
+.divLogoEnc{
+    padding-top: 400px;
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+.imgLogoEncabezado{
+    width: 600px;
+    height: 70px;
+    opacity: 0.9;
+    object-fit: cover;
+}
+/*footer*/
+.footer-grid{
+    background-color: rgb(0, 0, 0);
+    margin-top: 30px;
+}
+.logoFooter{
+    object-fit: contain;
+    height: 300px;
+    background-image: url(./img/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contactFoo h6{
+    color: $color6;
+    font-family: $font3;
+    font-size: 30px;
+    margin: 35px 0;
+}
+.contactFoo{
+    text-align: center;
+    color: $color5;
+    font-family: $font5;
+    font-size: 18px;
+    height: 300px;
+}
+.mapa{
+    width: 100%;
+    height: 300px;
+}
+.iconsStyle{
+    font-size: 30px;
+    font-family: $font5;
+    text-transform: uppercase;
+    font-weight: lighter;
+    border-bottom: 1px solid rgb(77, 77, 77);
+    border-top: 1px solid rgb(77, 77, 77);
+}
+.iconsStyle a{
+    color: $color5;
+}
+.iconsStyle a:hover{
+    color: $color4;
+    text-decoration: none;
+}
+.paragraphFooter{
+    font-size: 20px;
+    margin-top: 2%;
+}
+.foo{
+    padding-top: 20px;
+}
+.fa-solid{
+    color: white;
+}
+
+/* ------------------------------INDEX-------------------------- */
+/* headerIndex */
+.backHeaderIndex {
+    height: 90vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.616)), to(rgba(0, 0, 0, 0))), url(img/bannerindex.JPG);
+    background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0)), url(img/bannerindex.JPG);
+    background-size: cover;
+    background-position: right;
+}
+/* mainIndex */
+.sectionNosotros{
+    padding: 100px;
+    background:url(img/Nosotros.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    display: flex;
+    align-content: space-between;
+}
+.boxNosotros{
+    position: relative;
+    height: 400px;
+    max-width: 600px;
+    padding: 20px 50px;
+    background: rgba(255, 253, 247, 0.436);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp;
+    animation-duration: 2s;
+    overflow: hidden;
+}
+.boxNosotros .headingNosotros{
+    margin: 0 0 20px;
+    padding: 0;
+    font-family: $font4;
+    font-size: 48px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.912);
+}
+.boxNosotros .paragraphfoNosotros{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: $font5
+}
+.cardIndex{
+    background-color: $color1;
+}
+.btnIndex{
+    background-color: transparent;
+    color: $color6;
+    border: none;
+    font-size: 25px;
+    font-family: $font3;
+    font-weight: lighter;
+}
+.btnIndex:hover{
+    color: $color4;
+}
+video{
+    width: 85vw;
+}
+.seccionDental{
+    margin-top: 40px;
+}
+.jumbotronIndex{
+    background-color: $color1;
+    animation: fadeInUp;
+    animation-duration: 3s;
+}
+.display-4Index{
+    font-family: $font4;
+    color: $color6;
+    font-size: 60px;
+}
+.leadIndex{
+    font-family: $font3;
+    font-size: 40px;
+    color: $color3;
+}
+.h2index{
+    text-align: left;
+    color: $color7;
+    font-family: $font5;
+    font-weight: lighter;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-top: -5%;
+    margin-bottom: 15%;
+    border-bottom: 1px solid rgb(77, 77, 77);
+}
+.textStudio h4{
+    text-align: right;
+    font-weight: 10;
+    margin: 18px;
+}
+.textStudio { 
+    font-size: 30px;
+    padding: 30px;
+    margin-top: 20px;
+    align-self: center;
+    animation: fadeInUp;
+    animation-duration: 3s;
+}
+// Inicio Extend
+.textLab { 
+    @extend .textStudio;
+}
+.textLab h4 {
+    text-align: right;
+    font-weight: 10;
+    margin: 20px;
+}
+// Fin Extend
+.sectionStudio { 
+    border-top: 1px solid rgb(77, 77, 77);
+}
+.sectionLab { 
+    border-top: 1px solid rgb(77, 77, 77);
+    margin-top: 20px;
+}
+h4 a{
+    color: $color7;
+    font-family: $font5;
+
+}
+h4 a:hover{
+    color: $color4;
+    text-decoration: none;
+}
+
+/* ------------------------------SERVICIOS-------------------------- */
+/* headerServicios */
+.backHeaderServicios {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.616)), to(rgba(0, 0, 0, 0))), url(img/navbarserv.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0)), url(img/navbarserv.jpeg);
+    background-size: cover;
+    background-position: top;
+}
+/* mainServicios */
+.display-4Serv{
+    font-size: 50px;
+    font-family: $font5;
+    font-weight: lighter;
+    text-transform: uppercase;
+
+}
+.btnServ{
+    padding: 5px;
+    background-color: transparent;
+    color: $color3;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 1s;
+}
+.btnServ:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: $color7;
+}
+.jumbotronServ{
+    margin-top: 2rem;
+    color: $color7;
+    background-color: black;
+    background-image: url(./img/medicinaEst.jpg);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: right;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+.cardServ{
+    background-color: rgba(0, 0, 0, 0.616);
+    color: $color6;
+    font-family: $font5;
+    width: 50vw;
+}
+.jumbotronServ1{
+    margin-top: 2rem;
+    color: $color7;
+    background-image: url(./img/odontoEst.jpeg);
+    background-position: center;
+    background-size: cover;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+.cardServ1{
+    background-color: transparent;
+    color: $color6;
+    font-family: $font5;
+    width: 35vw;
+    border: none;
+}
+.jumbotronServ2{
+    margin-top: 2rem;
+    color: $color3;
+    background-color: #f3f3f3;
+    background-image: url(./img/peri.jpeg);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+.cardServ2{
+    background-color: #f3f3f3;
+    color: $color3;
+    font-family: $font5;
+    width: 60vw;
+    border: 0px;
+}
+.jumbotronServ3{
+    margin-top: 2rem;
+    color: $color7;
+    background-color: black;
+    background-image: url(./img/dsd.jpeg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: left;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+.cardServ3{
+    background-color: rgba(0, 0, 0, 0.616);
+    color: $color6;
+    font-family: $font5;
+    width: 50vw;
+}
+.jumbotronServ4{
+    margin-top: 2rem;
+    color: $color7;
+    background-color: black;
+    background-image: url(./img/regene.jpeg);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: right;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+.cardServ4{
+    background-color: rgba(0, 0, 0, 0.836);
+    color: $color6;
+    font-family: $font5;
+    width: 50vw;
+    text-align: left;
+}
+.jumbotronServ5{
+    margin-top: 2rem;
+    color: $color3;
+    background-color: rgb(255, 255, 255);
+    background-image: url(./img/tecnologia.jpeg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+.cardServ5{
+    color: $color3;
+    font-family: $font5;
+    width: 50vw;
+    border: 0px;
+    background-color: #ffffffb7;
+}
+/* ------------------------------LABORATORIO-------------------------- */
+/* headerLaboratorio */
+.backHeaderLaboratorio{
+    height: 85vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.616)), to(rgba(0, 0, 0, 0))), url(img/bannerLaboratorio.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0)), url(img/bannerLaboratorio.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* mainLaboratorio */
+.mockup img{
+    width: 400px;
+    height: 250px;
+}
+.carillas img{
+    width: 400px;
+}
+.carillasCol img{
+    height: 290px;
+}
+.sinmetal img{
+    width: 500px;
+}
+.p-2{
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+// Inicio MAPA
+$paleta:(
+    c1:#afafaf,
+    c2:#a1a1a1d9,
+    c3:#7c7c7c,
+    c4:#616161,
+    c5:#525252d9,
+);
+
+@each $llave, $valor in $paleta {
+    .color-#{$llave}{
+        color: $valor;
+        border-bottom: 1px solid $valor;
+        text-align: left;
+        margin: 10px 30px;
+        font-family: $font5;
+        font-weight: lighter;
+        font-size: 60px;
+        text-transform: uppercase;
+        animation: fadeIn;
+        animation-duration: 3s;
+    }
+}
+// Fin MAPA
+
+.rounded{
+    transition: transform .1s;
+}
+.rounded:hover{
+    transform: scale(1.3);
+}
+
+/* ------------------------------CONTACTO-------------------------- */
+/* headerContacto */
+.backHeaderContacto{
+    height: 18vh;
+    background-image: url(img/contacto.jpeg);
+    background-size: cover;
+    background-position:bottom;
+}
+/* mainContacto */
+.grid-mainContacto{
+    color: black;
+    background-image: url(img/contacto.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 20px;
+}
+.formContacto{
+    font-size: 30px;
+    width: 600px;
+    color: $color7;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.648);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+label{
+    font-family: $font3;
+}
+.formContacto p{
+    font-family: $font3;
+}
+.tituloContacto{
+    color: $color7;
+    text-align: center;
+    font-size: 40px;
+    font-family: $font3;
+    margin-bottom: 10px;
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: none;
+    border-radius: 0.25rem;
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+textarea{
+    min-height: 100px;
+    min-width: 200px;
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+#boton{
+    background-color: rgb(26, 26, 26);
+    color: $color7;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-family: $font3;
+}
+#boton:hover{
+    background-color: transparent;
+}
+/* ------------------------------TRABAJOS-------------------------- */
+/* headerTrabajos */
+.backHeaderTrabajos{
+    height: 85vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.616)), to(rgba(0, 0, 0, 0))), url(img/car1.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0)), url(img/car1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.display-4Trabajos{
+    font-family: $font2;
+    color: $color7;
+    font-size: 70px;
+    padding-top: 10px;
+    border-bottom: 1px solid rgb(77, 77, 77);
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+.cardTrabajos{
+    height: 400px;
+    background-image: url(./img/mockup2.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    border: 0px;
+    animation: fadeInUp;
+    animation-duration: 3s;
+}
+.cardTrabajos1{
+    height: 400px;
+    background-image: url(./img/car2.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    margin-top: 30px;
+    border: 0px;
+    animation: fadeInUp;
+    animation-duration: 3s;
+}
+.cardTrabajos2{
+    height: 400px;
+    background-image: url(./img/resina.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    border: 0px;
+    animation: fadeInUp;
+    animation-duration: 3s;
+}
+.cardTrabajos3{
+    height: 400px;
+    background-image: url(./img/live.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    border: 0px;
+    animation: fadeInUp;
+    animation-duration: 3s;
+}
+.cardText{
+    border-radius: 0.25rem;
+    background-color: #ffffff93;
+    transition: all 1s;
+    opacity: 0;
+    padding-top: 20px;
+    text-align: center;
+    color: $color1;
+    overflow-y: auto;
+}
+.cardText:hover{
+    opacity: 0.9;
+}
+.h5Trabajos{
+    font-weight: lighter;
+    font-size: 60px;
+    font-family: $font5;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(77, 77, 77);
+}
+.pTrabajos{
+    font-family: $font5;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+/* ------------------------------MEDIA QUERIES-------------------------- */
+@media (max-width: 992px) {
+    .sectionNosotros{
+        background:url(img/Nosotros2.jpeg);
+        background-size: cover;
+        background-position: bottom;
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    .boxNosotros{
+        position: relative;
+        height: 90%;
+        padding: 20px;
+        background: rgba(255, 253, 247, 0.436);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        animation: fadeInUp;
+        animation-duration: 2s;
+        overflow: auto;
+        margin: auto;
+        object-fit: contain;
+    }
+}
+@media (max-width: 768px) { 
+    .navbar-nav{
+        background-color: $color2;
+    }
+    ul.navbar-nav li a.nav-link{
+        text-align: center;
+    }
+    /* index */
+    .backHeaderIndex{
+        height: 85vh;
+    }
+    .sectionNosotros{
+        background:url(img/Nosotros2.jpeg);
+        background-size: cover;
+        background-position: bottom;
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    .boxNosotros{
+        position: relative;
+        height: 90%;
+        padding: 20px;
+        background: rgba(255, 253, 247, 0.436);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        animation: fadeInUp;
+        animation-duration: 2s;
+        overflow: hidden;
+        margin: auto;
+    }
+    .sectionStudio { 
+        padding: 15px 0;
+    }
+    .sectionLab { 
+        padding: 15px 0;
+    }
+    .mapa{
+        margin-top: 10px;
+    }
+    .contactFoo{
+        border-bottom: 1px solid $color3;
+        border-top: 1px solid $color3;
+    }
+    /* servicios */
+    .jumbotronServ{
+        background-position: center;
+        background-size: cover;
+    }
+    .cardServ{
+        background-color: rgba(0, 0, 0, 0.856);
+        width: 100%;
+    }
+    .cardServ1{
+        background-color: #2a2529ad;
+        width: 100%;
+    }
+    .cardServ2{
+        background-color: #f3f3f3b7;
+        width: 100%;
+    }
+    .cardServ3{
+        width: 100%;
+    }
+    .jumbotronServ4{
+        background-position: center;
+        background-size: cover;
+    }
+    .cardServ4{
+        width: 100%;
+    }
+    .jumbotronServ5{
+        background-position: center;
+        background-size: cover;
+    }
+    .cardServ5{
+        width: 100%;
+    }
+    /* trabajos */
+    .carousel-inner img{
+        height: 80%;
+    }
+    .card-img{
+        height: 300px;
+    }
+    /* contacto */
+    .backHeaderContacto{
+        height: 10%;
+    }
+    .formContacto{
+            width: 80%;
+    }
+    .backHeaderTrabajos{
+        position: relative;
+    }
+}
+@media (max-width: 576px) { 
+    .navbar-nav{
+        background-color: $color2;
+        height: 65vh;
+    }
+    ul.navbar-nav li a.nav-link{
+        text-align: center;
+        font-size: 40px;
+    }
+    .div-navnbar {
+        background-color: rgba(11, 11, 11, 0.514); 
+    }
+    /* footer */
+    .mapa{
+        margin-top: 10px;
+    }
+    .contactFoo{
+        border-bottom: 1px solid $color3;
+        border-top: 1px solid $color3;
+    }
+    /* index */
+    .backHeaderIndex {
+        height: 80vh;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.616)), to(rgba(0, 0, 0, 0))), url(img/bannerindexr.jpeg);
+        background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0)), url(img/bannerindexr.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    .sectionNosotros{
+        height:70vh;
+    }
+    .boxNosotros{
+        height: 100%;
+        text-align: center;
+        padding-top: 30px;
+    }
+    /* servicios */
+    .jumbotronServ{
+        background-position: top;
+    }
+    .cardServ{
+        text-align: left;
+    }
+    /* laboratorio */
+    .backHeaderLaboratorio{
+        height: 75vh;
+    }
+    .mainLab img{
+        width: 350px;
+    }
+    .rounded{
+        transition: transform .1s;
+    }
+    .rounded:hover{
+        transform: scale(1);
+    }
+    /* trabajos */
+    .backHeaderTrabajos{
+        height: 75vh;
+    }
+    .cardText{
+        border-radius: 0.25rem;
+        background-color: #ffffff93;
+        transition: all 1s;
+        opacity: 0.7;
+    }
+    .pTrabajos{
+        font-size: 16px;
+        margin-top: 15px;
+        color: #000000;
+    }
+    /* contacto */
+    .formContacto{
+        width: 100%;
+    }
+}
